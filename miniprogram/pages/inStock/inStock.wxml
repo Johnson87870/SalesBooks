@@ -1,0 +1,3 @@
+<!--pages/inStock/inStock.wxml-->
+<header-nav-bar navbar-data="{{navbarData}}"></header-nav-bar>
+<text>pages/inStock/inStock.wxml</text>

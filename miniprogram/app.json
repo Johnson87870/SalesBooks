@@ -1,0 +1,49 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/add/add",
+    "pages/inStock/inStock"
+  ],
+  "usingComponents": {
+    "header-nav-bar":"components/Navbar/Navbar",
+    "filter-box":"components/FilterBox/FilterBox",
+    "van-button": "@vant/weapp/button/index",
+    "van-datetime-picker": "@vant/weapp/datetime-picker/index",
+    "van-popup": "@vant/weapp/popup/index"
+  },
+  "window": {
+    "backgroundColor": "#f8db56",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#f8db56",
+    "navigationBarTitleText": "销售记账系统",
+    "navigationBarTextStyle": "black",
+    "navigationStyle": "custom"
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2",
+  "tabBar": {
+    "color": "#b9c4d2",
+    "selectedColor": "#000000",
+    "borderStyle": "black",
+    "list": [
+      {
+        "text": "账单列表",
+        "pagePath": "pages/index/index",
+        "iconPath": "images/icons/bookkeeping_icon.png",
+        "selectedIconPath": "images/icons/bookkeeping_icon.png"
+      },
+      {
+        "text": "添加",
+        "pagePath": "pages/add/add",
+        "iconPath": "images/icons/add_icon.png",
+        "selectedIconPath": "images/icons/add_icon.png"
+      },
+      {
+        "text": "库存",
+        "pagePath": "pages/inStock/inStock",
+        "iconPath": "images/icons/inStock_icon.png",
+        "selectedIconPath": "images/icons/inStock_icon.png"
+      }
+    ]
+  }
+}

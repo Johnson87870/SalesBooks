@@ -1,0 +1,9 @@
+<header-nav-bar navbar-data="{{navbarData}}"></header-nav-bar>
+<view class="index-page">
+  <view class="container">
+  <!-- 头部 -->
+    <view class="header">
+      
+    </view>
+  </view>
+</view>
