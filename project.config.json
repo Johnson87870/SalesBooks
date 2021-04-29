@@ -39,7 +39,7 @@
   },
   "appid": "wx108cbfd1f9cf5311",
   "projectname": "SalesBook",
-  "libVersion": "2.16.0",
+  "libVersion": "2.16.1",
   "condition": {
     "search": {
       "list": []

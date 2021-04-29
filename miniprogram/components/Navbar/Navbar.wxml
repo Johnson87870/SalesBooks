@@ -1,5 +1,5 @@
 <!--components/Navbar/Navbar.wxml-->
-<view class='nav-wrap' style='height: {{height*2 + 20}}px;'>
+<view class='nav-wrap' style='height: {{height*2 + 10}}px;'>
     <!-- // 导航栏 中间的标题 -->
   <view class='nav-title' style='line-height: {{height*2 + 44}}px;'>{{navbarData.title}}</view>
   <view style='display: flex; justify-content: space-around;flex-direction: column'>
