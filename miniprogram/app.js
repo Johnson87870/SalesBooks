@@ -14,6 +14,15 @@ App({
       })
     }
 
-    this.globalData = {}
+    wx.getSystemInfo({
+     success: (res) => {
+      const { statusBarHeight } = res;
+        this.globalData.height = statusBarHeight;
+     }
+    })
+  },
+
+  globalData : {
+    height: 0
   }
 })

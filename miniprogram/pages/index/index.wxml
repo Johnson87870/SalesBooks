@@ -1,9 +1,9 @@
 <header-nav-bar navbar-data="{{navbarData}}"></header-nav-bar>
-<view class="index-page">
+<view class="index-page" style="margin-top:{{height}}px">
   <view class="container">
   <!-- 头部 -->
     <view class="header">
-      
+      123312
     </view>
   </view>
 </view>

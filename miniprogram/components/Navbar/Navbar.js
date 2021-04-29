@@ -1,4 +1,6 @@
 // components/Navbar/Navbar.js
+const app = getApp();
+
 Component({
   /**
    * 组件的属性列表
@@ -23,13 +25,8 @@ Component({
   },
 
   attached: function () {
-    wx.getSystemInfo({
-      success: (res) => {
-        const { statusBarHeight } = res;
-        this.setData({
-          height: statusBarHeight
-        })
-      }
+    this.setData({
+      height:app.globalData.height
     })
   },
 

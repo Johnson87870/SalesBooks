@@ -8,14 +8,14 @@ Page({
   data: {
     navbarData: {
       title:'账单列表',
-    }
+    },
+    height: app.globalData.height * 2 + 10,
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: function (options) {
-
+  onLoad (options) {
   },
 
   /**
