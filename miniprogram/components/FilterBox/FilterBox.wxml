@@ -1,17 +1,5 @@
 <view class="FilterBox">
-  <view bindtap="showPopup">筛选日期: {{screeningDate}}<text></text></view>
-  <van-popup show="{{ show }}" bind:close="onClose"  position="bottom">
-    <van-datetime-picker
-      title="选择查看账单日期"
-      show-toolbar="true"
-      loading="true"
-      type="date"
-      value="{{ currentDate }}"
-      bind:input="onInput"
-      bind:confirm="onConfirm"
-      min-date="20"
-      formatter="{{ formatter }}"
-    />
+  <van-popup show="{{ show }}" position="bottom">
+    <van-datetime-picker title="选择查看账单日期" show-toolbar="true" loading="true" type="date" value="{{ currentDate }}" bind:input="onInput" bind:confirm="onConfirm" bind:cancel="onCancel" min-date="20" formatter="{{ formatter }}" />
   </van-popup>
-
 </view>

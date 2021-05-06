@@ -1,4 +1,5 @@
 const app = getApp()
+const moment = require('../../js/moment.min');
 
 Page({
 
@@ -10,6 +11,12 @@ Page({
       title:'账单列表',
     },
     height: app.globalData.height * 2 + 10,
+    showFilter:false,
+    filterDate:{
+      year:'2021',
+      month:'05',
+      day:''
+    }
   },
 
   /**
@@ -65,5 +72,29 @@ Page({
    */
   onShareAppMessage: function () {
     
+  },
+  
+  selectDate () {
+    this.setData({
+      showFilter:true,
+    })
+  },
+  // 筛选日期确认按钮返回
+  onConfirm (e) {
+    const {data} = e.detail;
+    this.setData({
+      showFilter: false,
+      filterDate:{
+        year: moment(data).format('YYYY'),
+        month: moment(data).format('MM'),
+        day: moment(data).format('DD'),
+      }
+    })
+  },
+  // 筛选日期取消按钮返回
+  onCencel(e) {
+    this.setData({
+       showFilter: false,
+    })
   }
 })

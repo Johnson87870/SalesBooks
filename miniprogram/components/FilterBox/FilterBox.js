@@ -6,23 +6,36 @@ Component({
    * 组件的属性列表
    */
   properties: {
+    filterDate: String,
+    FilterType:String,
+    show: Boolean
+  },
 
+  attached: function () { 
+    this.setData({
+      currentDate: Number(moment(this.data.filterDate).format('x')),
+    })
   },
 
   /**
    * 组件的初始数据
    */
   data: {
+      filterDate:'',
       show: false,
+      FilterType: '',
+      currentDate: '',
       screeningDate: '',
-      currentDate: new Date().getTime(),
-      minDate: new Date().getTime(),
+      minDate:  '',
       formatter(type, value) {
         if (type === 'year') {
           return `${value}年`;
         } 
         if (type === 'month') {
           return `${value}月`;
+        }
+        if (type === 'day'){
+          return `${value}日`;
         }
         return value;
       },
@@ -33,21 +46,16 @@ Component({
    */
   methods: {
     onInput(event) {
-      this.setData({
-        currentDate: event.detail,
-      });
+      // this.setData({
+      //   currentDate: event.detail,
+      // });
     },
     onConfirm(event) {
-      this.setData({
-        screeningDate: moment(event.detail).format('YYYY年MM月DD日')
-      })
-      this.onClose();
+      this.triggerEvent('confirm',{ data: event.detail})
+      // this.onClose();
     },
-    showPopup() {
-      this.setData({ show: true })
-    },
-    onClose() {
-      this.setData({ show: false })
+    onCancel() {
+      this.triggerEvent('cancel');
     }
   }
 })

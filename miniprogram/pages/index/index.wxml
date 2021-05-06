@@ -1,9 +1,30 @@
 <header-nav-bar navbar-data="{{navbarData}}"></header-nav-bar>
 <view class="index-page" style="margin-top:{{height}}px">
   <view class="container">
-  <!-- 头部 -->
+    <!-- 头部 -->
     <view class="header">
-      123312
+      <view class="Date" capture-bind:tap="selectDate">
+        <view class="fz20">{{filterDate.year}}年</view>
+        <view class="filter">
+          <text>{{filterDate.month}}月</text>
+          <view class="drop-down">
+            <image src="../../images/icons/drop_down.png"></image>
+          </view>
+        </view>
+        <filter-box show="{{ showFilter }}" filterDate="2021-05-01" FilterType="YYYY-MM" bind:confirm="onConfirm" bind:cancel="onCencel"></filter-box>
+      </view>
+      <view class="Income">
+        <view class="fz20">收入</view>
+        <view>1，221，211,0</view>
+      </view>
+      <view class="Spending">
+        <view class="fz20">支出</view>
+        <view>1，221，211,0</view>
+      </view>
+      <view class="NetIncome">
+        <view class="fz20">净收入</view>
+        <view>0</view>
+      </view>
     </view>
   </view>
 </view>
