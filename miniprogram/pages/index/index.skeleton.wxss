@@ -1,0 +1,74 @@
+/*
+此文件为开发者工具生成，生成时间: 2021/4/29 下午5:12:12
+
+在 /Users/wuwenjun/Desktop/Sales-book/miniprogram/pages/index/index.wxss 中引入样式
+```
+@import "./index.skeleton.wxss";
+```
+
+更多详细信息可以参考文档：https://developers.weixin.qq.com/miniprogram/dev/devtools/skeleton.html
+*/
+.sk-transparent {
+    color: transparent !important;
+  }
+.sk-text-43-5606-786 {
+    background-image: linear-gradient(transparent 43.5606%, #EEEEEE 0%, #EEEEEE 56.4394%, transparent 0%) !important;
+    background-size: 100% 239.1304rpx;
+    position: absolute !important;
+  }
+.sk-text {
+    background-origin: content-box !important;
+    background-clip: content-box !important;
+    background-color: transparent !important;
+    color: transparent !important;
+    background-repeat: repeat-y !important;
+  }
+.sk-text-14-2857-218 {
+    background-image: linear-gradient(transparent 14.2857%, #EEEEEE 0%, #EEEEEE 85.7143%, transparent 0%) !important;
+    background-size: 100% 27.8986rpx;
+    position: relative !important;
+  }
+.sk-text-14-2857-439 {
+    background-image: linear-gradient(transparent 14.2857%, #EEEEEE 0%, #EEEEEE 85.7143%, transparent 0%) !important;
+    background-size: 100% 35.5072rpx;
+    position: relative !important;
+  }
+.sk-text-14-2857-170 {
+    background-image: linear-gradient(transparent 14.2857%, #EEEEEE 0%, #EEEEEE 85.7143%, transparent 0%) !important;
+    background-size: 100% 27.8986rpx;
+    position: relative !important;
+  }
+.sk-text-14-2857-217 {
+    background-image: linear-gradient(transparent 14.2857%, #EEEEEE 0%, #EEEEEE 85.7143%, transparent 0%) !important;
+    background-size: 100% 35.5072rpx;
+    position: relative !important;
+  }
+.sk-text-14-2857-338 {
+    background-image: linear-gradient(transparent 14.2857%, #EEEEEE 0%, #EEEEEE 85.7143%, transparent 0%) !important;
+    background-size: 100% 27.8986rpx;
+    position: relative !important;
+  }
+.sk-text-14-2857-400 {
+    background-image: linear-gradient(transparent 14.2857%, #EEEEEE 0%, #EEEEEE 85.7143%, transparent 0%) !important;
+    background-size: 100% 35.5072rpx;
+    position: relative !important;
+  }
+.sk-text-14-2857-892 {
+    background-image: linear-gradient(transparent 14.2857%, #EEEEEE 0%, #EEEEEE 85.7143%, transparent 0%) !important;
+    background-size: 100% 27.8986rpx;
+    position: relative !important;
+  }
+.sk-text-14-2857-409 {
+    background-image: linear-gradient(transparent 14.2857%, #EEEEEE 0%, #EEEEEE 85.7143%, transparent 0%) !important;
+    background-size: 100% 35.5072rpx;
+    position: relative !important;
+  }
+.sk-container {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: transparent;
+  }
